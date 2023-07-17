@@ -50,6 +50,11 @@ Install Python Flask dependency
 
     pip install flask
     pip install flask-mysql
+    #Installing in ubuntu machine: <Follow below steps>
+    sudo apt update
+    sudo apt install python3-pip
+    pip3 --version
+    sudo pip3 install --upgrade pip
 
 - Copy app.py or download it from source repository
 - Configure database credentials and parameters 
