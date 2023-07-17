@@ -32,9 +32,10 @@ This is used in the demonstration of development of Ansible Playbooks.
 
   - Create database and database users
         
-        # mysql -u <username> -p
+        # mysql -u root -p
         
         mysql> CREATE DATABASE employee_db;
+        mysql> CREATE USER 'db_user'@'localhost IDENTIFIED BY 'Passw0rd';
         mysql> GRANT ALL ON *.* to db_user@'%' IDENTIFIED BY 'Passw0rd';
         mysql> USE employee_db;
         mysql> CREATE TABLE employees (name VARCHAR(20));
